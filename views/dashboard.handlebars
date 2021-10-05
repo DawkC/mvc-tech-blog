@@ -1,0 +1,30 @@
+<section class="flex-column justify-center">
+    <h2>Create New Blog</h2>
+    <form class="new-blog-form margin">
+        <div>
+            <label class="form-label" for="blog-title">Title</label>
+            <input class="form-input" type="text" id="blog-title" name="blog-title" />
+        </div>
+        <div>
+            <label class="form-label" for="blog-content">Content</label>
+            <input class="form-input" type="text" id="blog-content" name="blog-content" />
+        </div>
+            <button type="submit" class="btn-back">Create</button>
+    </form>
+</section>
+
+{{#if blogs.length}}
+<section class="flex-column justify-center">
+    <h2>Your Blogs</h2>
+        <ul class="list-group">
+        {{#each blogs as |blog|}}
+            <li class="list-item">
+                {{> blog-info blog}}
+                <a class="btn-back" href="/dashboard/edit/{{blog.id}}" class="edit-link">Edit Blog</a>
+            </li>
+        {{/each}}
+        </ul>
+</section>
+{{/if}}
+
+<script src="/javascript/add-blog.js"></script>

@@ -1,0 +1,11 @@
+<article class="blog card">
+     <div class="title card-header">
+        <h3>{{title}}</h3>
+    </div>
+
+    <div class="card-body">
+        <p>{{content}}</p>
+        by {{user.username}} on {{createdAt}}
+        | <a href="/blog/{{id}}">{{comments.length}} Comments</a>
+    </div>
+</article>
