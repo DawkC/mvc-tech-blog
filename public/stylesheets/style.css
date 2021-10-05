@@ -1,19 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 :root {
     --primary: #84a9ac;
-    --secondary: #e7dfd5;
+    --secondary: #5f5548;
     --tertiary: #ff3d2e;
     --light: #ffffff;
-    --dark: #3b6978;
+    --dark: #0f7192;
     --border-radius: 0.3rem;
     --spacing-one: calc(1rem * 0.25);
     --spacing-two: calc(1rem * 0.5);
     --spacing-three: 1rem;
     --spacing-four: calc(1rem * 1.5);
     --spacing-five: calc(1rem * 3);
-  }
-  
-  * {
-    box-sizing: border-box;
   }
   
   body {
@@ -101,7 +103,7 @@
     border: none;
     outline: none;
     background-color: var(--light-dark);
-    box-shadow: 3px 3px var(--secondary);
+    box-shadow: 3px 3px #0f7192;
     transform: translate(-1px, -1px);
     display: inline-block;
     width: auto;
