@@ -10,7 +10,7 @@ https://the-tech-blog-cad.herokuapp.com/
 
 ## Github
 
-
+https://github.com/DawkC/mvc-tech-blog
 
 ## Technologies
 
